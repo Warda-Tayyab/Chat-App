@@ -1,0 +1,140 @@
+/* Wrapper to center content horizontally and vertically */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+ 
+}
+.App{
+  background-color: #ffffff;
+  max-height: 100%;
+  padding: 20px;
+}
+body {
+  background-color: #EAEDED; /* Light green-gray similar to WhatsApp */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.login_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  /* Main container styling */
+  .login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Title styling */
+  .login_title {
+    display: flex;
+    align-items: center;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 30px;
+  }
+  
+  .login_icon {
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-right: 10px;
+  }
+  
+  .login_title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Form styling */
+  .login_form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .login_form input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .login_form input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login_form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login_form button:hover {
+    background-color: #357ab8;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .login_title h1 {
+      font-size: 1.8rem;
+    }
+  
+    .login_icon {
+      font-size: 2rem;
+    }
+  
+    .login_form input, .login_form button {
+      padding: 12px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .login_title h1 {
+      font-size: 1.5rem;
+    }
+  
+    .login_icon {
+      font-size: 1.8rem;
+    }
+  
+    .login_form input, .login_form button {
+      padding: 10px;
+      font-size: 0.85rem;
+    }
+  }
+                            
